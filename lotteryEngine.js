@@ -15,6 +15,7 @@ async function processUSSDRequest(sessionId, phoneNumber, text) {
   
 
   switch (step) {
+    console.log('111111111111',step );
     case 0:
       response = `CON Welcome to LuckyDraw!
       1. Buy Ticket
