@@ -19,4 +19,11 @@ router.post('/payment-callback', (req, res) => {
   res.sendStatus(200);
 });
 
+router.get('/valid', (req, res) => {
+  // You can add validation checks here if needed
+  res.status(200).json({
+    status: "Validated"
+  });
+});
+
 module.exports = router;
