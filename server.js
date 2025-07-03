@@ -9,6 +9,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/', paymentCallback);
 
+app.use('/validate', paymentCallback);
+
 
 app.post('/ussd', (req, res) => {
   const { sessionId, phoneNumber, text } = req.body;
