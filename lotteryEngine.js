@@ -17,9 +17,9 @@ async function processUSSDRequest(sessionId, phoneNumber, text) {
   switch (step) {
     case 0:
       response = `CON Welcome to LuckyDraw!
-          1. Buy Ticket
-          2. View Result
-          3. Help`;
+      1. Buy Ticket
+      2. View Result
+      3. Help`;
       break;
 
     case 1:
