@@ -31,8 +31,8 @@ async function processUSSDRequest(sessionId, phoneNumber, text) {
 
         if (payment.success) {
           response = `END 🎟️ Ticket #${ticket} booked!
-                      Payment request sent. Approve it on your phone.
-                      Draw at 9 PM. Good luck!`;
+          Payment request sent. Approve it on your phone.
+          Draw at 9 PM. Good luck!`;
         } else {
           response = `END ❌ Payment failed: ${payment.error}`;
         }
